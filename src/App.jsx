@@ -1,23 +1,19 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Product from "./components/Product";
-import UseCases from "./components/UseCases";
-import Resources from "./components/Resources";
 import Company from "./components/Company";
-import SupportMarquee from "./components/SupportMarquee"
-import Users from "./components/Users"
+import Testimonials from "./components/Testimonials"
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-white min-h-screen">
       <Navbar />
       <Hero />
       <Product />
-      <UseCases />
-      <SupportMarquee />
-      <Users />
-      <Resources />
+      <Testimonials />
       <Company />
+      <Footer />
     </div>
   );
 }
