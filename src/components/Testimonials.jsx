@@ -6,7 +6,7 @@ const TESTIMONIALS = [
     quote: "Usually, an alert at 2 AM means I'm staring at Grafana for two hours trying to correlate spans. Last week, Klyroo pointed me to a specific Redis timeout in a downstream service within five minutes. I was back in bed before my coffee even got cold.",
     author: "Aditya Munjal",
     role: "Software Engineer",
-    company: "Healthify",
+    company: "HealthifyMe",
     image: "/aditya.jpeg"
   },
   
