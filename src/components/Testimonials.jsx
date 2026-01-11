@@ -3,22 +3,26 @@ import { Quote } from "lucide-react";
 
 const TESTIMONIALS = [
   {
-    quote: "Klyroo.dev has transformed how we handle production incidents. Root cause analysis that used to take hours now happens in minutes.",
-    author: "Ganesha N Hotti",
+    quote: "Usually, a alert at 2 AM means I'm staring at Grafana for two hours trying to correlate spans. Last week, Klyroo pointed me to a specific Redis timeout in a downstream service within five minutes. I was back in bed before my coffee even got cold.",
+    author: "Aditya Munjal",
     role: "Software Engineer",
-    company: "Boeing"
+    company: "Healthify",
+    image: "/aditya.jpeg"
   },
+  
   {
-    quote: "The AI-powered insights help us understand our system behavior at a level we never had before. Game changer for our SRE team.",
+    quote: "Usually, when something breaks, we just try guessing what happened. Klyroo actually shows us the 'why' so we don't have to waste time trying to figure it out what went wrong.",
     author: "Sanjay NT",
     role: "Machine Learning Engineer",
-    company: "Samsung"
+    company: "Samsung",
+    image: "/sanjay.jpeg"
   },
   {
-    quote: "Integrating with our existing observability stack was seamless. The root cause analysis capabilities are incredibly accurate.",
-    author: "Pravin Kumar",
+    quote: "We pointed our OpenTelemetry collector at Klyroo and had our first root-cause report in under 5 minutes. No custom instrumentation, no tagging nightmare. It just worked with the data we already had.",
+    author: "Pravin Subramanian",
     role: "Site Reliability Engineer",
-    company: "UniCards"
+    company: "UniCards",
+    image: "/pravin.jpeg"
   }
 ];
 
@@ -49,21 +53,31 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className="bg-white rounded-3xl p-8 border-2 border-gray-100 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 relative"
+              className="bg-white rounded-3xl p-8 border-2 border-gray-100 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 relative flex flex-col"
             >
               <div className="mb-6">
                 <Quote className="text-blue-600 opacity-20" size={40} />
               </div>
-              <p className="text-gray-700 text-lg leading-relaxed mb-8">
+              <p className="text-gray-700 text-lg leading-relaxed mb-8 flex-1">
                 "{testimonial.quote}"
               </p>
-              <div className="border-t border-gray-100 pt-6">
-                <div className="font-bold text-slate-900 text-lg">
-                  {testimonial.author}
-                </div>
-                <div className="text-gray-500 text-sm mt-1">
-                  {/* {testimonial.role}, */}
-                   {testimonial.company}
+              <div className="border-t border-gray-100 pt-6 mt-auto">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="min-w-0 flex-1">
+                    <div className="font-bold text-slate-900 text-lg truncate">
+                      {testimonial.author}
+                    </div>
+                    <div className="text-gray-500 text-sm mt-1 truncate">
+                      {testimonial.company}
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0 ml-4">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.author}
+                      className="w-16 h-16 rounded-full object-cover border-2 border-gray-200"
+                    />
+                  </div>
                 </div>
               </div>
             </motion.div>
