@@ -4,21 +4,21 @@ import { Quote } from "lucide-react";
 const TESTIMONIALS = [
   {
     quote: "Klyroo.dev has transformed how we handle production incidents. Root cause analysis that used to take hours now happens in minutes.",
-    author: "Sarah Chen",
-    role: "Head of Engineering",
-    company: "TechCorp"
+    author: "Ganesha N Hotti",
+    role: "Software Engineer",
+    company: "Boeing"
   },
   {
     quote: "The AI-powered insights help us understand our system behavior at a level we never had before. Game changer for our SRE team.",
-    author: "Michael Rodriguez",
-    role: "SRE Lead",
-    company: "CloudScale"
+    author: "Sanjay NT",
+    role: "Machine Learning Engineer",
+    company: "Samsung"
   },
   {
     quote: "Integrating with our existing observability stack was seamless. The root cause analysis capabilities are incredibly accurate.",
-    author: "Emily Johnson",
+    author: "Pravin Kumar",
     role: "DevOps Manager",
-    company: "DataFlow Inc"
+    company: "UniCards"
   }
 ];
 

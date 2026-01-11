@@ -48,7 +48,8 @@ export default function Hero() {
         transition={{ delay: 0.1 }}
         className="text-6xl md:text-7xl lg:text-8xl font-extrabold mb-8 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent leading-tight"
       >
-        <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI SRE</span> for modern production systems
+        <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI SRE</span> 
+        <p>for modern production systems</p>
       </motion.h1>
 
       <motion.p
@@ -76,13 +77,13 @@ export default function Hero() {
         >
           Book a Demo <ArrowRight size={20} />
         </motion.a>
-        <motion.button
+        {/* <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-white/80 backdrop-blur-sm text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-full font-bold hover:bg-white hover:border-slate-300 transition-all shadow-lg"
         >
           Contact Us
-        </motion.button>
+        </motion.button> */}
       </motion.div>
     </section>
   );
