@@ -17,7 +17,7 @@ const TESTIMONIALS = [
   {
     quote: "Integrating with our existing observability stack was seamless. The root cause analysis capabilities are incredibly accurate.",
     author: "Pravin Kumar",
-    role: "DevOps Manager",
+    role: "Site Reliability Engineer",
     company: "UniCards"
   }
 ];
@@ -62,7 +62,8 @@ export default function Testimonials() {
                   {testimonial.author}
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  {testimonial.role}, {testimonial.company}
+                  {/* {testimonial.role}, */}
+                   {testimonial.company}
                 </div>
               </div>
             </motion.div>
