@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Product from "./components/Product";
+import Testimonials from "./components/Testimonials";
 import Company from "./components/Company";
-import Testimonials from "./components/Testimonials"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
